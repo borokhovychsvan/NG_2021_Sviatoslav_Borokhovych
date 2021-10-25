@@ -4,14 +4,14 @@ using namespace std;
 
 int main()
 {
-    float m; // mass of ship (in tons)
-    float result; // answer to the task
-    int L; // amount of fuel
+    int mass; // mass of ship (in tons)
+    int result; // answer to the task
+    int amountFuel; // amount of fuel
     cout << " Mass of ship :" ;
-    cin >> m;
-    L=(ceil(m/3))-2;
-    cout << " L = " << L << endl;
-    result=300*L;
-    cout << " amount of fuel :" << result << endl;
+    cin >> mass;
+    amountFuel=(ceil(mass/3))-2;
+    cout << " amount of fuel = " << amountFuel << endl;
+    result=300*amountFuel;
+    cout << " Fuel needed :" << result << endl;
     return 0;
 }
