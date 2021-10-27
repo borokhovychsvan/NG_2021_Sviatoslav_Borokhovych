@@ -4,15 +4,13 @@ using namespace std;
 
 int main()
 {
-    int number,
-    Sum = 0;
+    int number,Sum = 0;
     cout << "Please, enter number = ";
     cin >> number;
 
-    while(number!=0)
+    for(int i = number; i > 0 ; i/=10 )
     {
         Sum+=number%10;
-        number /= 10;
     }
     cout << "Sum = " << Sum << endl;
 

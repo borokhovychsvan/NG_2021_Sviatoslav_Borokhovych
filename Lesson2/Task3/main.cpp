@@ -4,25 +4,16 @@ using namespace std;
 
 int main()
 {
-   int Size, i=0, j=0;
-   cout << " Enter Size = ";
-   cin >> Size;
-   cout << endl;
-
-   i=Size;
-   while(i){
-    cout << endl;
-    if (i==1 || i==Size) {
-        j=Size;
-        while (j--) {cout << "*";}
-    } else {
-        cout << "*";
-        j=Size-2;
-        while(j--)
-        cout << " ";
-        cout << "*";
+    int Size;
+    cout << "Enter Size = ";
+    cin >> Size;
+    for (int y = 1; y <= Size; y++) {
+        for (int x = 1; x <= Size; x++) {
+            if ((y < Size && y > 1) && (x < Size && x > 1))
+            cout << " ";
+            else cout << "*";
+        }
+        cout << endl;
     }
-     i--;
-    }
-   return 0;
+    return 0;
 }
