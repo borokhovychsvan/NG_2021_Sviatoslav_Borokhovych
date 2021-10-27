@@ -22,12 +22,12 @@ int main()
         x1=(-b+sqrt(D))/(2*a);
         x2=(-b-sqrt(D))/(2*a);
         cout << "x1 = " << x1 << endl << "x2 = " << x2 << endl;
-        }else {
-            if(D==0){
-                x=-b/(2*a);
-                cout << "x = " << x << endl;
-            }else cout << "No roots ";
         }
+    if(D==0){
+        x=-b/(2*a);
+        cout << "x = " << x << endl;
+    }else cout << "No roots ";
+
 
     return 0;
 }
